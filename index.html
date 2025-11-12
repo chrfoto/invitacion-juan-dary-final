@@ -139,4 +139,378 @@
                 <li><a href="#hero" class="hover:text-accent-gold transition-colors duration-200">Inicio</a></li>
                 <li><a href="#gifts" class="hover:text-accent-gold transition-colors duration-200">Regalos</a></li>
                 <li><a href="#program" class="hover:text-accent-gold transition-colors duration-200">Programa</a></li>
-                <li><a href="#location" class="hover:text-accent-gold transition-colors duration
+                <li><a href="#location" class="hover:text-accent-gold transition-colors duration-200">Ubicación</a></li>
+                <li><a href="#gallery" class="hover:text-accent-gold transition-colors duration-200">Galería</a></li>
+                <li><a href="#hotels" class="hover:text-accent-gold transition-colors duration-200">Hoteles</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex flex-col items-center justify-center text-center p-6 bg-primary-light overflow-hidden">
+        <!-- Contoured Flowers - Top Left -->
+        <svg class="absolute top-0 left-0 w-32 h-32 md:w-48 md:h-48 contoured-svg" viewBox="0 0 200 200">
+            <path d="M100,10 C120,30 140,10 160,30 C180,50 160,70 180,90 C200,110 180,130 160,150 C140,170 120,150 100,170 C80,150 60,170 40,150 C20,130 40,110 20,90 C0,70 20,50 0,30 C20,10 40,30 60,10 C80,-10 100,10 100,10 Z" transform="scale(0.7) translate(10,10)"/>
+            <circle cx="100" cy="100" r="15"/>
+        </svg>
+        <!-- Contoured Flowers - Bottom Right -->
+        <svg class="absolute bottom-0 right-0 w-32 h-32 md:w-48 md:h-48 contoured-svg" viewBox="0 0 200 200">
+            <path d="M100,10 C120,30 140,10 160,30 C180,50 160,70 180,90 C200,110 180,130 160,150 C140,170 120,150 100,170 C80,150 60,170 40,150 C20,130 40,110 20,90 C0,70 20,50 0,30 C20,10 40,30 60,10 C80,-10 100,10 100,10 Z" transform="scale(0.7) translate(10,10)"/>
+            <circle cx="100" cy="100" r="15"/>
+        </svg>
+
+        <div class="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl mb-8">
+            <img src="https://i.imgur.com/2D12Xa9.jpeg" alt="Juan y Dary - Novios" class="w-full h-auto object-cover rounded-xl">
+            <!-- Contoured Ring SVG -->
+            <svg class="absolute bottom-4 left-4 w-20 h-20 md:w-24 md:h-24 contoured-svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="30" stroke-width="3"/>
+                <circle cx="50" cy="50" r="20" stroke-width="3"/>
+                <line x1="50" y1="20" x2="50" y2="30" stroke-width="3"/>
+                <line x1="50" y1="70" x2="50" y2="80" stroke-width="3"/>
+                <line x1="20" y1="50" x2="30" y2="50" stroke-width="3"/>
+                <line x1="70" y1="50" x2="80" y2="50" stroke-width="3"/>
+            </svg>
+            <!-- Contoured Watch SVG -->
+            <svg class="absolute top-4 right-4 w-20 h-20 md:w-24 md:h-24 contoured-svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke-width="3"/>
+                <circle cx="50" cy="50" r="35" stroke-width="1.5"/>
+                <line x1="50" y1="10" x2="50" y2="20" stroke-width="2"/>
+                <line x1="50" y1="80" x2="50" y2="90" stroke-width="2"/>
+                <line x1="10" y1="50" x2="20" y2="50" stroke-width="2"/>
+                <line x1="80" y1="50" x2="90" y2="50" stroke-width="2"/>
+                <line x1="50" y1="50" x2="65" y2="50" stroke-width="1.5"/>
+                <line x1="50" y1="50" x2="50" y2="35" stroke-width="1.5"/>
+            </svg>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-bold text-accent-gold mb-4">¡Nos Casamos!</h1>
+        <p class="text-3xl md:text-5xl text-text-dark mb-4 font-semibold">Juan & Dary</p>
+        <p class="text-xl md:text-2xl text-text-light mb-2">Lunes, 22 de Diciembre de 2025</p>
+        <p class="text-xl md:text-2xl text-text-light mb-8">Paso del Muerto, Michoacán</p>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="text-3xl md:text-4xl font-bold text-accent-green mb-8 p-4 rounded-xl bg-secondary-grey shadow-md">
+            <span id="days">00</span> días
+            <span id="hours">00</span> horas
+            <span id="minutes">00</span> minutos
+            <span id="seconds">00</span> segundos
+        </div>
+
+        <!-- Calendar Button -->
+        <button id="addToCalendarBtn" class="btn-primary mt-4">
+            <i class="fas fa-calendar-alt mr-2"></i> Añadir al Calendario
+        </button>
+    </section>
+
+    <!-- About Section (Optional) -->
+    <section id="about" class="py-16 px-6 bg-secondary-grey text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Nuestra Historia</h2>
+        <p class="text-lg md:text-xl text-text-light leading-relaxed max-w-3xl mx-auto">
+            Después de 2 años de amor, risas y aventuras, hemos decidido unir nuestras vidas para siempre. Estamos emocionados de celebrar este día tan especial con ustedes, nuestras personas más querida. ¡Gracias por ser parte de nuestra historia!
+        </p>
+        <!-- Contoured Flowers as subtle decoration -->
+        <svg class="w-24 h-24 contoured-svg mx-auto mt-8" viewBox="0 0 200 200">
+            <path d="M100,10 C120,30 140,10 160,30 C180,50 160,70 180,90 C200,110 180,130 160,150 C140,170 120,150 100,170 C80,150 60,170 40,150 C20,130 40,110 20,90 C0,70 20,50 0,30 C20,10 40,30 60,10 C80,-10 100,10 100,10 Z" transform="scale(0.5) translate(50,50)"/>
+        </svg>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-16 px-6 bg-primary-light text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Programa de la Boda</h2>
+        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto">
+            Aquí tienen el itinerario de nuestro gran día para que no se pierdan ningún momento especial.
+        </p>
+        <div class="max-w-md mx-auto bg-secondary-grey p-6 rounded-xl shadow-md text-left">
+            <img src="https://i.imgur.com/4S2AKMy.jpeg" alt="Gráfico del Programa de la Boda" class="mx-auto rounded-lg shadow-md max-w-full h-auto">
+        </div>
+        <!-- Contoured calendar/clock icon -->
+        <svg class="w-20 h-20 contoured-svg mx-auto mt-8" viewBox="0 0 100 100">
+            <rect x="20" y="20" width="60" height="60" rx="5" ry="5" stroke-width="2"/>
+            <line x1="20" y1="35" x2="80" y2="35" stroke-width="1.5"/>
+            <circle cx="35" cy="55" r="5" stroke-width="1.5"/>
+            <circle cx="65" cy="55" r="5" stroke-width="1.5"/>
+            <line x1="50" y1="40" x2="50" y2="70" stroke-width="1.5"/>
+            <line x1="50" y1="55" x2="60" y2="55" stroke-width="1.5"/>
+        </svg>
+    </section>
+
+    <!-- Gifts Section -->
+    <section id="gifts" class="py-16 px-6 bg-secondary-grey text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Regalos</h2>
+        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto leading-relaxed">
+            El mejor regalo es su presencia. Pero si desean obsequiarnos algo más, una contribución para nuestra luna de miel sería un detalle que atesoraremos por siempre.
+        </p>
+
+        <div class="mt-8 max-w-md mx-auto bg-primary-light p-6 rounded-xl shadow-lg text-left">
+            
+            <p class="text-xl font-semibold text-accent-green mb-4 text-center">
+                Transferencia Bancaria (Nacional e Internacional)
+            </p>
+
+            <div class="space-y-2 text-text-dark text-lg">
+                <p><span class="font-semibold">Titular:</span> Isabel Dariana Campuzano Rauda</p>
+                <p><span class="font-semibold">Banco:</span> BBVA</p>
+                <p><span class="font-semibold">Cuenta:</span> 1561674353</p>
+                <p><span class="font-semibold">CLABE:</span> 012180015616743531</p>
+                <p><span class="font-semibold">T. Débito:</span> 4152 3144 8223 5739</p>
+                <p class="mt-4 text-sm text-text-light"><span class="font-semibold">Transferencias del Extranjero (Clave SWIFT/BIC):</span> BCMRMXMM</p>
+            </div>
+            
+            <!-- El código QR y su texto de referencia han sido eliminados. -->
+        </div>
+
+        <!-- Contoured elements: suitcase, plane, heart -->
+        <div class="flex justify-center space-x-8 mt-8">
+            <svg class="w-16 h-16 contoured-svg" viewBox="0 0 100 100">
+                <rect x="20" y="30" width="60" height="50" rx="5" ry="5" stroke-width="2"/>
+                <line x1="50" y1="30" x2="50" y2="80" stroke-width="1.5"/>
+                <line x1="20" y1="45" x2="80" y2="45" stroke-width="1.5"/>
+                <path d="M40,30 L40,20 L60,20 L60,30" stroke-width="2"/>
+            </svg>
+            <svg class="w-16 h-16 contoured-svg" viewBox="0 0 100 100">
+                <path d="M10,50 C20,40 80,40 90,50 L80,60 L20,60 Z" stroke-width="2"/>
+                <path d="M30,50 L40,40 L60,40 L70,50" stroke-width="2"/>
+                <circle cx="20" cy="55" r="5" stroke-width="1.5"/>
+                <circle cx="80" cy="55" r="5" stroke-width="1.5"/>
+            </svg>
+            <svg class="w-16 h-16 contoured-svg" viewBox="0 0 100 100">
+                <path d="M50,20 C70,0 90,20 90,40 C90,60 50,90 50,90 C50,90 10,60 10,40 C10,20 30,0 50,20 Z" stroke-width="2"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-16 px-6 bg-secondary-grey text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Ubicación</h2>
+        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto">
+            Para llegar a Paso del Muerto, pueden usar el mapa general. Una vez en la zona, el croquis les guiará a los puntos exactos de la ceremonia y celebración.
+        </p>
+
+        <div class="p-6 bg-primary-light rounded-xl shadow-md mb-8">
+            <h3 class="text-2xl font-semibold text-accent-green mb-4">Mapa General de la Zona (Paso del Muerto)</h3>
+            <div class="responsive-iframe-container mb-4">
+                <!-- Google Maps Embed - General area for Paso del Muerto -->
+                <!-- Coordinates: 19.323944 N, -101.608389 W (converted from 19°19'26.2"N 101°36'30.2"W) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.077209798541!2d-101.61057788556855!3d19.32394443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE5JzI2LjJOIiAxMDHCsDM2JzMwLjJW!5e0!3m2!1ses-419!2smx!v1700000000000!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <a href="https://maps.google.com/?q=19.323944,-101.608389" target="_blank" class="btn-primary">
+                <i class="fas fa-map-marker-alt mr-2"></i> Abrir en Google Maps (Zona General)
+            </a>
+        </div>
+
+        <div class="p-6 bg-primary-light rounded-xl shadow-md">
+            <h3 class="text-2xl font-semibold text-accent-green mb-4">Croquis: Ceremonia y Celebración</h3>
+            <p class="text-lg text-text-light mb-4">
+                La ceremonia religiosa y la celebración se llevarán a cabo en diferentes puntos dentro de Paso del Muerto. Este croquis les ayudará a ubicarlos fácilmente.
+            </p>
+            <a href="https://i.imgur.com/sEuD37l.jpeg" target="_blank">
+                <img src="https://i.imgur.com/sEuD37l.jpeg" alt="Croquis de la Ceremonia y Celebración" class="w-full h-auto object-cover rounded-lg shadow-sm mb-4">
+            </a>
+            <a href="https://i.imgur.com/sEuD37l.jpeg" target="_blank" class="btn-primary">
+                <i class="fas fa-search-plus mr-2"></i> Ver Croquis Completo
+            </a>
+        </div>
+
+        <!-- Contoured location pin icon -->
+        <svg class="w-20 h-20 contoured-svg mx-auto mt-8" viewBox="0 0 100 100">
+            <circle cx="50" cy="30" r="15" stroke-width="2"/>
+            <path d="M50,45 L50,80 C50,90 30,90 30,80 L30,60 L70,60 L70,80 C70,90 50,90 50,80 Z" stroke-width="2"/>
+        </svg>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-16 px-6 bg-primary-light text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Nuestros Momentos</h2>
+        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto">
+            Un vistazo a nuestra historia a través de algunas de nuestras fotos favoritas.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gallery-grid">
+            <!-- Photos provided by the user -->
+            <img src="https://i.imgur.com/dPo7d94.jpeg" alt="Foto de Boda 1" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/Y0B4NyN.jpeg" alt="Foto de Boda 2" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/k6Cx5Z0.jpeg" alt="Foto de Boda 3" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/MoYWIDj.jpeg" alt="Foto de Boda 4" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/KPuic4P.jpeg" alt="Foto de Boda 5" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/DMpYxtj.jpeg" alt="Foto de Boda 6" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/Wynxloa.jpeg" alt="Foto de Boda 7" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/oXlgDSX.jpeg" alt="Foto de Boda 8" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/bKfA6lT.jpeg" alt="Foto de Boda 9" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <!-- Photo 10 (https://i.imgur.com/bKfA6lT.jpeg) removed as requested -->
+            <img src="https://i.imgur.com/QNyh112.jpeg" alt="Foto de Boda 11" class="w-full h-auto object-cover rounded-lg shadow-sm">
+            <img src="https://i.imgur.com/vHPhUem.jpeg" alt="Foto de Boda 12" class="w-full h-auto object-cover rounded-lg shadow-sm">
+        </div>
+        <!-- Contoured Flowers -->
+        <svg class="w-24 h-24 contoured-svg mx-auto mt-8" viewBox="0 0 200 200">
+            <path d="M100,10 C120,30 140,10 160,30 C180,50 160,70 180,90 C200,110 180,130 160,150 C140,170 120,150 100,170 C80,150 60,170 40,150 C20,130 40,110 20,90 C0,70 20,50 0,30 C20,10 40,30 60,10 C80,-10 100,10 100,10 Z" transform="scale(0.5) translate(50,50)"/>
+        </svg>
+    </section>
+
+    <!-- Hotels Section -->
+    <section id="hotels" class="py-16 px-6 bg-secondary-grey text-center rounded-xl shadow-lg mx-auto max-w-5xl my-12">
+        <h2 class="text-4xl font-bold text-accent-gold mb-6">Sugerencias de Hospedaje</h2>
+        <p class="text-lg md:text-xl text-text-light mb-8 max-w-3xl mx-auto">
+            Santa Clara del Cobre es el pueblo más cercano al lugar de la ceremonia, el cual cuenta con algunos hoteles y hostales, por lo que les dejamos opciones seguras si es que desean realizar una reservación:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-primary-light rounded-xl shadow-md text-left">
+                <h3 class="text-2xl font-semibold text-accent-green mb-2">Hotel Oasis</h3>
+                <p class="text-md text-text-light mb-2">Número de celular WhatsApp: +52 4432690995</p>
+                <p class="text-md text-text-light mb-2">Teléfono: 4349300040</p>
+                <p class="text-md text-text-light mb-4">Ubicación: Portal Allende #144, Centro C.P. 61800, Santa Clara del Cobre, Michoacán.</p>
+            </div>
+            <div class="p-6 bg-primary-light rounded-xl shadow-md text-left">
+                <h3 class="text-2xl font-semibold text-accent-green mb-2">Hostal Casa Don Heri</h3>
+                <p class="text-md text-text-light mb-2">Número de celular WhatsApp: +52 4432735906</p>
+                <p class="text-md text-text-light mb-2">+523357851198</p>
+                <p class="text-md text-text-light mb-2">Teléfono: 4343431194</p>
+                <p class="text-md text-text-light mb-4">Ubicación: Calle Francisco I. Madero, #77, Centro C.P. 61800, Santa Clara del Cobre, Michoacán.</p>
+            </div>
+            <div class="p-6 bg-primary-light rounded-xl shadow-md text-left">
+                <h3 class="text-2xl font-semibold text-accent-green mb-2">Hotel Camino Real</h3>
+                <p class="text-md text-text-light mb-2">Teléfono: 439 120 8870</p>
+                <p class="text-md text-text-light mb-4">Ubicación: Avenida Generalísimo Morelos Pte. 213, Centro, 61800 Santa Clara del Cobre, Michoacán.</p>
+            </div>
+            <div class="p-6 bg-primary-light rounded-xl shadow-md text-left">
+                <h3 class="text-2xl font-semibold text-accent-green mb-2">Hotel Restaurant Real del Cobre</h3>
+                <p class="text-md text-text-light mb-2">Teléfono: 434 343 1432</p>
+                <p class="text-md text-text-light mb-4">Ubicación: Portal Vasco de Quiroga 19, Centro, 61800 Santa Clara del Cobre, Michoacán.</p>
+            </div>
+        </div>
+        <!-- Contoured hotel icon -->
+        <svg class="w-20 h-20 contoured-svg mx-auto mt-8" viewBox="0 0 100 100">
+            <rect x="20" y="20" width="60" height="60" rx="5" ry="5" stroke-width="2"/>
+            <line x1="20" y1="40" x2="80" y2="40" stroke-width="1.5"/>
+            <line x1="20" y1="60" x2="80" y2="60" stroke-width="1.5"/>
+            <line x1="40" y1="20" x2="40" y2="80" stroke-width="1.5"/>
+            <line x1="60" y1="20" x2="60" y2="80" stroke-width="1.5"/>
+            <rect x="45" y="65" width="10" height="15" stroke-width="1.5"/>
+        </svg>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-primary-light py-8 px-6 text-center rounded-t-xl shadow-inner">
+        <p class="text-lg mb-4">¡Los esperamos para celebrar nuestro amor!</p>
+        <p class="text-sm text-gray-400">&copy; 2025 Juan & Dary. Todos los derechos reservados.</p>
+        <!-- Contoured Flowers -->
+        <svg class="w-16 h-16 contoured-svg mx-auto mt-4" viewBox="0 0 200 200" style="stroke: var(--color-primary-light);">
+            <path d="M100,10 C120,30 140,10 160,30 C180,50 160,70 180,90 C200,110 180,130 160,150 C140,170 120,150 100,170 C80,150 60,170 40,150 C20,130 40,110 20,90 C0,70 20,50 0,30 C20,10 40,30 60,10 C80,-10 100,10 100,10 Z" transform="scale(0.4) translate(60,60)"/>
+            <circle cx="100" cy="100" r="10" style="stroke: var(--color-primary-light);"/>
+        </svg>
+    </footer>
+
+    <!-- Modal for RSVP Confirmation / General Messages -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle" class="text-2xl font-bold text-accent-gold mb-4"></h3>
+            <p id="modalMessage" class="text-lg text-text-light mb-6"></p>
+            <button class="btn-primary" onclick="closeModal()">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        // Set the wedding date (Year, Month (0-11), Day, Hour, Minute, Second)
+        // Ceremony starts at 12:00 PM
+        const weddingDate = new Date("December 22, 2025 12:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            // Calculate time units
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+
+            // If the countdown is over, write some text
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "¡El gran día ha llegado!";
+            }
+        }, 1000);
+
+        // Removed the old RSVP form submission logic as Google Forms handles it now.
+        // The modal functions (showModal, closeModal) are kept for general use if needed.
+
+        // Modal functions
+        function showModal(title, message) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalMessage').innerText = message;
+            document.getElementById('myModal').style.display = 'flex'; // Use flex to center
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Add to Calendar functionality
+        document.getElementById('addToCalendarBtn').addEventListener('click', function() {
+            const eventTitle = "Boda Juan y Dary";
+            const eventLocation = "Paso del Muerto, Michoacán";
+            const eventDescription = "¡Acompáñanos a celebrar nuestro amor!";
+            // Updated start time to 12:00 PM
+            const startDate = new Date("2025-12-22T12:00:00"); // YYYY-MM-DDTHH:MM:SS
+            const endDate = new Date("2025-12-22T23:00:00"); // End time for the event
+
+            const formatDateTime = (date) => {
+                return date.toISOString().replace(/-|:|\.\d{3}/g, '');
+            };
+
+            const start = formatDateTime(startDate);
+            const end = formatDateTime(endDate);
+
+            // Google Calendar link
+            const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(eventTitle)}&dates=${start}/${end}&details=${encodeURIComponent(eventDescription)}&location=${encodeURIComponent(eventLocation)}&sf=true&output=xml`;
+
+            // iCal (Outlook, Apple Calendar) link
+            const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//${window.location.hostname}//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:${new Date().getTime()}@${window.location.hostname}
+DTSTAMP:${formatDateTime(new Date())}
+DTSTART:${start}
+DTEND:${end}
+SUMMARY:${eventTitle}
+LOCATION:${eventLocation}
+DESCRIPTION:${eventDescription}
+END:VEVENT
+END:VCALENDAR`;
+
+            // Offer both options or directly open Google Calendar
+            if (confirm("¿Deseas añadir el evento a Google Calendar (Aceptar) o descargar un archivo para otros calendarios (Cancelar)?")) {
+                window.open(googleCalendarUrl, '_blank');
+            } else {
+                const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'boda_juan_y_dary.ics';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
